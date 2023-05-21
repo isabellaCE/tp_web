@@ -1,0 +1,144 @@
+/* caso não funcione no chrome, é necessário habilitar 
+essa propriedade em: chrome://flags/
+pesquisar por Smooth Scrolling e marcar como Enabled */
+
+/* ======== DECLARAÇÃO DE VARIÁVEIS =========*/
+:root {
+  --primary-color: #f2b705;
+  --primary-color-text: white;
+  --second-color-text: white;
+}
+
+/* ======== INÍCIO DO CSS =========*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======== SECTION COMO FUNCIONA =========*/
+
+#como-funciona {
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+  text-align: center;
+  padding: 80px 30px;
+}
+
+#como-funciona h2 {
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+#como-funciona h3 {
+  margin-top: 30px;
+}
+
+#como-funciona p {
+  color: var(--second-color-text);
+  margin-bottom: 50px;
+}
+
+#como-funciona .color {
+  color: var(--primary-color);
+}
+
+/* ======== SECTION DESTINOS =========*/
+
+#destinos {
+  margin-top: 50px;
+}
+
+#destinos .card {
+  padding: 5px;
+}
+
+#destinos .card:hover {
+  background-color: rgba(214, 214, 210, 0.6);
+  transition: 1.5s;
+}
+
+#destinos h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#destinos h4 {
+  color: var(--primary-color);
+}
+
+/* ======== SECTION AJUDA =========*/
+
+.jumbotron {
+  margin: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ajuda .jumbotron {
+  height: 50vh;
+  background-color: var(--primary-color);
+  color: var(--primary-color-text);
+}
+
+#ajuda h2 {
+  font-size: 2.5rem;
+}
+
+#ajuda p {
+  font-size: 1.2rem;
+}
+
+#ajuda span {
+  margin-left: 10px;
+}
+
+/* ======== SECTION DESTINOS INTERNACIONAIS =========*/
+
+#destinos-internacionais img {
+  width: 100%;
+  padding: 10px;
+}
+
+#destinos-internacionais {
+  margin: 100px auto;
+}
+
+#destinos-internacionais h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* ======== BACK TO TOP =========*/
+
+.back-to-top {
+  background: green;
+  color: var(--second-color-text);
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
+  clip-path: circle();
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+
+  /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_transform_translate */
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font-Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- link para css específico desse projeto -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+
+    <title>Viaje Mais</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Navbar -->
+      <!-- https://getbootstrap.com.br/docs/4.1/components/navbar/ -->
+      <!-- barra de navegação dark padrão bootstrap -->
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+      <!-- Retirar bg-dark e personalizar via css -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Viaje+</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(página atual)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#como-funciona">Como Funciona</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ajuda">Ajuda</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destinos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2018/04/Blog-Mala-de-Viagem-paris-1024x576.jpg"
+                      target="_blank"
+                      >Paris</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2019/01/Blog-Mala-de-Viagem-Portugal-1024x576.jpg"
+                      target="_blank"
+                      >Portugal</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-toquio-1024x576.jpg"
+                      target="_blank"
+                      >Tóquio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-nova-york-1024x576.jpg"
+                      target="_blank"
+                      >Nova York</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-disney-1024x576.jpg"
+                      target="_blank"
+                      >Disney</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-toronto-1024x576.jpg"
+                      target="_blank"
+                      >Toronto</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Seção do banner -->
+    <section class="banner">
+      <div class="color-overlay"></div>
+      <div class="banner-elementos">
+        <h1>VIAJE +</h1>
+        <p>Melhores Destinos com os Melhores Preços</p>
+        <div class="banner-btn">
+          <!-- https://getbootstrap.com.br/docs/4.1/components/buttons/ -->
+          <button type="button" class="btn btn-lg btn-primary">
+            Saiba mais
+          </button>
+          <button type="button" class="btn btn-lg btn-success">
+            Reserve já
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conteúdo Principal da Página -->
+    <main>
+      <!-- Seção como funciona -->
+      <section id="como-funciona" class="container-fluid">
+        <div class="row">
+          <header class="col-12">
+            <h2>Como Funciona</h2>
+          </header>
+        </div>
+
+        <div class="row">
+          <section class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-map-marked fa-stack-1x color"></i>
+            </span>
+            <h3>Escolha um destino</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+              repudiandae.
+            </p>
+          </section>
+
+          <section class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-plane fa-stack-1x color"></i>
+            </span>
+            <h3>Escolha seu vôo</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed
+              repudiandae.
+            </p>
+          </section>
+
+          <section class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-car fa-stack-1x color"></i>
+            </span>
+            <h3>Alugue um carro</h3>
+            <p>
+              Nor again is there anyone who loves or pursues or desires to
+              obtain pain.
+            </p>
+          </section>
+
+          <section class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-home fa-stack-1x color"></i>
+            </span>
+            <h3>Alugue um apartamento</h3>
+            <p>
+              Ut enim ad minima veniam, quis nostrum exercitationem ullam
+              corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+            </p>
+          </section>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <a
+              class="btn btn-lg btn-success"
+              target="_blank"
+              href="#"
+              role="button"
+              >Saiba mais<span><i class="ml-2 fas fa-arrow-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção destinos -->
+      <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+      <section id="destinos" class="container-fluid">
+        <div class="row">
+          <header class="col-12">
+            <h2>Todos os tipos de Destinos</h2>
+          </header>
+
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="img/campo.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Campo</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Inventore fugiat reiciendis cumque. Cumque ex, ducimus
+                    mollitia error laborum dolorum excepturi distinctio
+                    reprehenderit voluptatem vitae saepe quam temporibus alias
+                    ea laboriosam.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/praia.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Praia</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Inventore fugiat reiciendis cumque. Cumque ex, ducimus
+                    mollitia error laborum dolorum excepturi distinctio
+                    reprehenderit voluptatem vitae saepe quam temporibus alias
+                    ea laboriosam.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/neve.avif" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Neve</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Inventore fugiat reiciendis cumque. Cumque ex, ducimus
+                    mollitia error laborum dolorum excepturi distinctio
+                    reprehenderit voluptatem vitae saepe quam temporibus alias
+                    ea laboriosam.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/congresso.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Negócios</h5>
+                  <p class="card-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Inventore fugiat reiciendis cumque. Cumque ex, ducimus
+                    mollitia error laborum dolorum excepturi distinctio
+                    reprehenderit voluptatem vitae saepe quam temporibus alias
+                    ea laboriosam.
+                  </p>
+                  <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção solicita ajuda -->
+      <!-- https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp -->
+      <section id="ajuda" class="container-fluid">
+        <div class="jumbotron">
+          <h2>Pronto para sua viagem?</h2>
+          <p>Clique no botão abaixo que entraremos em contato com você!</p>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5531999881234&text=Oi! Preciso de ajuda!"
+            target="_blank"
+            class="btn btn-lg btn-success"
+            >Preciso de Ajuda!<span><i class="fab fa-whatsapp"></i></span
+          ></a>
+        </div>
+      </section>
+
+      <!-- Seção dos destinos internacionais -->
+      <!-- https://www.w3schools.com/bootstrap/bootstrap_images.asp -->
+      <!-- https://blogmaladeviagem.com.br/destinos-internacionais-preferidos/ -->
+      <section id="destinos-internacionais" class="container">
+        <h2>Destinos Internacionais</h2>
+
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2018/04/Blog-Mala-de-Viagem-paris-1024x576.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2019/01/Blog-Mala-de-Viagem-Portugal-1024x576.jpg"
+                class="d-block w-80"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-toquio-1024x576.jpg"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-nova-york-1024x576.jpg"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-disney-1024x576.jpg"
+                class="d-block w-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://blogmaladeviagem.com.br/wp-content/uploads/2020/06/Blog-Mala-de-Viagem-toronto-1024x576.jpg"
+                class="d-block w-100"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <footer class="card">
+      <div class="card-body">
+        <h2 class="card-title">Viaje+</h2>
+        <p class="card-text">
+          &copy copyright 2021 - Todos os direitos reservados
+        </p>
+        <!-- https://getbootstrap.com.br/docs/4.1/components/buttons/ -->
+        <a href="#" class="btn btn-success">Voltar ao Início</a>
+      </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- https://scrollrevealjs.org/guide/hello-world.html -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- JavaScript específico desse projeto -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
